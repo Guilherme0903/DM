@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextNome"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:hint="Nome" />
+
+            <EditText
+                android:id="@+id/editTextEndereco"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:hint="Endereço" />
+
+            <EditText
+                android:id="@+id/editTextCidade"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:drawableStart="@android:drawable/ic_menu_mylocation"
+                android:hint="Cidade" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:drawableStart="@android:drawable/ic_dialog_email"
+                android:hint="Email" />
+
+            <EditText
+                android:id="@+id/editTextTelefone"
+                android:layout_width="240dp"
+                android:layout_height="74dp"
+                android:drawableStart="@android:drawable/ic_menu_call"
+                android:hint="Telefone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="106dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinnerEstado"
+                    android:layout_width="239dp"
+                    android:layout_height="54dp"
+                    android:entries="@array/estados" />
+
+                <EditText
+                    android:id="@+id/editTextCep"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="CEP" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextAniversario"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:drawableStart="@android:drawable/ic_menu_my_calendar"
+                android:hint="Aniversário" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="138dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="159dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.524"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.402"
+                    app:srcCompat="@android:drawable/ic_menu_send" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
